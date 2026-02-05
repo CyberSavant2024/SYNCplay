@@ -4,11 +4,16 @@
   "description": "Real-time YouTube Music sync app with Socket.IO",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
   },
   "keywords": ["youtube", "music", "sync", "socket.io", "real-time"],
   "author": "",
   "license": "MIT",
+  "engines": {
+    "node": ">=18.x",
+    "npm": ">=9.x"
+  },
   "dependencies": {
     "express": "^4.18.2",
     "socket.io": "^4.6.1"

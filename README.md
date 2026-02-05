@@ -1,14 +1,34 @@
 # 🎵 YouTube Music Sync
 
-Real-time YouTube Music synchronization app that allows you to watch YouTube videos with friends in perfect sync over a local network.
+Real-time YouTube Music synchronization app that allows you to watch YouTube videos with friends in perfect sync - works both locally and globally when deployed to the cloud.
 
-## Features
+## ✨ Features
 
 - **Room System**: Create or join rooms with 6-character codes
 - **Host Controls**: Host can control playback for all users
 - **Real-time Sync**: All users stay in sync via Socket.IO
 - **Drift Correction**: Automatic correction for playback drift on guest devices
 - **Multiple Link Formats**: Supports YouTube, YouTube Music, and youtu.be links
+- **Cloud Ready**: Deploy to Render, Heroku, or Railway for global access
+
+## 🚀 Quick Start
+
+### Option 1: Cloud Deployment (Recommended)
+
+**Deploy to the cloud and access from anywhere!**
+
+See [RENDER_DEPLOYMENT.md](RENDER_DEPLOYMENT.md) for complete deployment guide.
+
+**Quick Deploy to Render:**
+1. Fork/clone this repo to your GitHub
+2. Sign up at [Render.com](https://render.com)
+3. Create new Web Service → Connect GitHub repo
+4. Deploy with default settings (auto-detected)
+5. Share your public URL!
+
+### Option 2: Local Network Setup
+
+**For use on the same Wi-Fi network:**
 
 ## Windows Setup Instructions
 
@@ -42,8 +62,10 @@ node server/server.js
 
 You should see:
 ```
-Server running on http://localhost:3000
-Allow connections from other devices on your network at http://<your-ip>:3000
+Server running on port 3000
+Environment: development
+Local: http://localhost:3000
+Network: http://<your-ip>:3000
 ```
 
 ### 4. Find Your Local IP Address
